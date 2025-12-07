@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineStream - Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Star<span>Stream</span></div>
+  <nav class="desktop-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="pages/movies.html">Movies</a>
+    <a href="pages/series.html">Series</a>
+    <a href="pages/mylist.html">My List</a>
+  </nav>
+  <div id="menuBtn" class="menu-btn" aria-label="Open menu">&#9776;</div>
+  <nav id="mobileNav" class="mobile-nav" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="pages/movies.html">Movies</a>
+    <a href="pages/series.html">Series</a>
+    <a href="pages/mylist.html">My List</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="background: linear-gradient(to bottom, rgba(0,0,0,0.6), #000), url('https://images.unsplash.com/photo-1517602302552-471fe67acf66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600&q=80') center/cover no-repeat;">
+  <div class="hero-text">
+    <h1>Welcome to CineStream</h1>
+    <p>Discover and enjoy your favorite movies & series.</p>
+  </div>
+</section>
+
+<!-- MOVIES GRID -->
+<section class="slider-section">
+  <h2>🎬 Trending Movies</h2>
+  <div class="slider" id="slider"></div>
+</section>
+
+<!-- POPUP -->
+<div id="popup" class="popup hidden" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="popup-content" role="document">
+    <span class="close-popup" id="closePopup" role="button" aria-label="Close popup">&times;</span>
+    <img id="popupImg" src="" alt="Poster">
+    <h3 id="popupTitle">Title</h3>
+    <p id="popupDesc">Description...</p>
+    <button id="toggleListBtn" class="btn" type="button">Add to My List</button>
+  </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
